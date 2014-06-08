@@ -55,8 +55,8 @@ $wgEmailAuthentication = true;
 $wgDBtype = "mysql";
 $wgDBserver = "localhost";
 $wgDBname = "scene_wiki";
-$wgDBuser = "root";
-$wgDBpassword = "Corde7377";
+$wgDBuser = "MyUser";
+$wgDBpassword = "MyPassword";
 
 # MySQL specific settings
 $wgDBprefix = "wiki_";
