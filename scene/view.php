@@ -154,9 +154,16 @@
 		<input type="hidden" name="Log Header[Cast of Characters]" value="<?php echo $total; ?>">
 		<input type="hidden" name="Log Header[Synopsis]" value="<?php echo preg_replace('/&/','&amp;',$title['scene_desc']); ?>">
 		<input type="hidden" name="Poses[Poses]" value="<?php echo $fullformat; ?>">
-		<input type="submit" value="Submit Log to Wiki">
-		</form>
 		<?php
+	        if($title['scene_title']) {
+                	echo "<input id='logsubmit' type='submit' value='Submit Log to Wiki'>";
+        	}
+	        else {
+                	echo "<input id='logsubmit' type='submit' value='No Scene Title' disabled>";
+        	}
+		?>
+	</form>
+	<?php
 	}
 	else
 	{
